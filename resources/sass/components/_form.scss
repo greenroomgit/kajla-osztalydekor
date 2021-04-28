@@ -1,0 +1,178 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 2rem 3rem;
+  @include from($tablet) {
+    padding: 4rem 3rem 3rem;
+  }
+
+        border-image-source: svg('yellow-box-bg.svg');
+        border-image-slice: 38 fill;
+        border-image-width: 40px;
+        border-image-repeat:stretch;
+  &__description {
+    font-size: $modal-headline;
+    line-height: 1;
+    margin-bottom: 1em;
+    color: $brown;
+    text-align: center;
+  }
+  &__input-container {
+    flex-basis: 100%;
+    margin: 0 0 1rem 0;
+    @media only screen and (min-width: 768px) {
+      flex-basis: 50%;
+    }
+    &--full-width {
+      flex-basis: 100%;
+    }
+    &--horizontal-centered {
+      text-align: center;
+    }
+    &--last-centered {
+      margin: 1rem auto 1rem auto;
+            padding-bottom: 2em;
+
+    }
+    &--bottom-offset {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &--no-bottom-margin {
+      margin-bottom: 0;
+    }
+    &--desktop-only {
+      display: none;
+      @media only screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
+  }
+  &__separator {
+    display: none;
+    height: 4px;
+    margin: 1rem 0 1rem 0;
+    @media only screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+  &__input {
+    width: 90%;
+    padding: 0 ;
+    background: none !important;
+    padding: 0 1em;
+    font-family: "apokabold", sans-serif;
+    color: #fff;
+    font-size: $font-size;
+    border: none;
+    background: transparent;
+    height: 3.2em;
+    border-image-source: url('/assets/images/input-bg.png');
+    border-image-slice: 48 fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+
+    &--full-width {
+      width: 100%;
+    }
+    &--hidden {
+      display: none;
+    }
+    &:focus {
+    border-image-source: url('/assets/images/input-focus-bg.png');
+    border-image-slice: 48 fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+
+      outline: none;
+    }
+  }
+  &__label {
+    font-family: "marujoregular", sans-serif;
+    color: $brown;
+    a {
+      color: $brown;
+      text-decoration: underline;
+    }
+    &--checkbox {
+      font-family: "apokabold", sans-serif;
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 33px;
+    width: 33px;
+    background-image: svg("checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+  }
+  &__checkbox:checked ~ &__checkmark {
+    background-image: svg("checkbox-checked.svg");
+  }
+  &__input-button-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  &__image-preview-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  &__image-preview {
+    width: 5rem;
+    margin: 0 auto;
+  }
+  &__error-container {
+    text-align: center;
+    margin: 1rem auto;
+  }
+  &__input-error {
+    font-size: 15px;
+    color: $red;
+    text-align: center;
+  }
+
+
+}
+
+input, select {
+      -webkit-appearance: none !important;
+      -moz-appearance: none !important;
+      appearance: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    transition: background-color 5000s ease-in-out 0s;
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: none !important;
+    -webkit-text-fill-color: #fff;
+}
