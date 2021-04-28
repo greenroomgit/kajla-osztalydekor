@@ -1,0 +1,64 @@
+.yellow-box {
+  border-image-source: svg('yellow-box-bg.svg');
+    border-image-slice: 38 fill;
+    border-image-width: 34px;
+    border-image-repeat: stretch;
+    padding: 1.5rem;
+
+
+  &__inner {
+    background: #FCC627;
+    padding: 1rem;
+  }
+
+  h3 {
+    color: $white;
+    text-shadow: shadow($brown,2px);
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+
+  &--alert {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    .yellow-box__inner {
+      p {
+        color:$brown;
+        margin-top: 1em;
+      }
+    }
+  }
+
+  #makett-fotok > & {
+    margin-top: -3rem; 
+    @include from($tablet) {
+      margin-top: -7rem; 
+    }
+  }
+
+  .button {
+    margin: 0.3em 0.1em;
+  }
+
+  &.kit-guide {
+          p {
+              color: $brown;
+              margin-top: 1em;
+              font-size: 18px;
+          }
+
+          img {
+            margin-top: 3rem;
+          }
+          .yellow-box__inner {
+            padding: 0;
+                @include from($tablet) {
+            padding: 1rem;
+                }
+
+          }
+  }
+}
