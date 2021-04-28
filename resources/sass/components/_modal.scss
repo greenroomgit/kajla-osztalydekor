@@ -1,0 +1,64 @@
+.modal {
+}
+
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.modal-inner {
+  overflow: auto;
+
+}
+.modal-content {
+  margin: 2rem 0;
+  padding: 1rem;
+  max-height: unset;
+  @media only screen and (min-width: 768px) {
+    width: 603px;
+    margin: 0 20px;
+    overflow: hidden;
+  }
+}
+
+.modal-close-button {
+  position: absolute;
+  top: -0.3em;
+  right: 0.25em;
+  width: 64px;
+  height: 60px;
+  max-height: unset;
+  max-width: unset;
+  background: transparent;
+  border: none;
+  background-image: svg("close-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.modal-success {
+  color: $brown;
+}
+
+.modal-success-header {
+  font-family: "marujoregular", sans-serif;
+  color: $white;
+  text-shadow: shadow($brown,2px);
+  font-size: 2.375rem;
+  text-align: center;
+}
+
+.modal-success-icon {
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.modal-success-notice {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  color: $brown;
+}
