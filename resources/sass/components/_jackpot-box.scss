@@ -1,0 +1,39 @@
+.jackpot-box {
+  border-image-source: svg('box-blue-horizontal2.svg');
+  border-image-slice: 38 fill;
+  border-image-width: 34px;
+  border-image-repeat: stretch;
+  padding: 1.5rem;
+  margin-top: 5%;
+
+  &__inner {
+      background-color:#187a7d;
+      padding: 16px;
+  }
+
+  h2 {
+      color: $white;
+      text-shadow: shadow(lighten(#187a7d, 20%), 3px);
+  }
+
+  .jackpot-map-item {
+      position: relative;
+      .jackpot-map {
+        margin: 0% -30% -20% -10%;
+    }
+        @include from($tablet) {
+          .jackpot-map {
+              margin: -30% -40% -50% -15%;
+          }
+      }
+  }
+
+  &.wide {
+      @include from($tablet) {
+          margin-top: 10%;
+          .jackpot-map {
+              margin: -30% -20% -40% 0;
+          }
+      }
+  }
+}
