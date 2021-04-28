@@ -1,0 +1,62 @@
+//
+.button {
+    min-height: 2em;
+    font-size: $button-size*0.8;
+    color: $white;
+    font-family: $font-header;
+    text-shadow: shadow($orange-dark, 2px);
+    transition: all 0.2s ease-in-out;
+    @include from($tablet) {
+        font-size: $button-size;
+    }
+
+    &.is-primary {
+        //todo: meg nem nyulik a bg. Kerlek, hogy nezz majd ra.
+        background: transparent;
+        border-image: url('/assets/images/button-bg.png');
+        border-image-slice: 38 fill;
+        border-image-width: 14px;
+        border-image-repeat:  stretch;
+        min-height: unset;
+        height: auto;
+        padding: 8px 20px;
+        @include from($tablet) {
+            padding: 5px 30px;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-image: url('/assets/images/button-hover-bg.png');
+            border-image-slice: 38 fill;
+            border-image-width: 14px;
+            border-image-repeat: stretch;
+            padding: 8px 20px;
+
+        @include from($tablet) {
+            padding: 5px 30px;
+        }
+
+        }
+    }
+
+    &.is-secondary {
+        border-image: url('/assets/images/button-sec-bg.png');
+        border-width: 20px;
+        border-image-slice: 40 fill;
+        border-image-repeat: stretch;
+        background: transparent;
+        line-height: 1;
+        padding: 0 0.5em;
+        height: auto;
+
+        &:hover {
+            background-color: transparent;
+            transform: scale(1.02);
+        border-image: url('/assets/images/button-sec-hover-bg.png');
+        border-width: 20px;
+        border-image-slice: 40 fill;
+        border-image-repeat: stretch;
+            color: $white;
+        }
+    }
+}
