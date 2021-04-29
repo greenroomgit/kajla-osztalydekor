@@ -11,7 +11,7 @@
         <meta property="og:image" itemprop="image primaryImageOfPage" content="{{ URL::asset('storage'.$image['picture']) }}" />
 
 
-    
+
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{mix('/css/app.css')}}">
@@ -45,8 +45,7 @@
                 <div class="container">
                     <div class="hero-body">
                         <h1>
-                            Építsd fel kajlával Magyarország<br>
-                            nevezettességeit és nyerj!
+                            Építsétek meg magyarország 3D-s térképét,<br> és diszítsétek vele osztálytermeteket!
                         </h1>
                     </div>
                     <div class="hero__family hero__family--left"></div>

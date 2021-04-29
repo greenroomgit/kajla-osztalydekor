@@ -6,9 +6,8 @@
         <div class="container">
             <div class="hero-body">
                 <h1 class="">
-                    <b>Alkoss csodát!</b>
-                    Építsd fel kajlával Magyarország<br>
-                    nevezettességeit!
+                    <b>Alkossatok csodát!</b>
+                    Építsétek meg magyarország 3D-s térképét,<br> és diszítsétek vele osztálytermeteket!
                 </h1>
             </div>
 

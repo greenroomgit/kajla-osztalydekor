@@ -49,12 +49,12 @@ $navbar-box-shadow-size: 0;
             background: transparent;
             text-align: center;
             height: 100vh;
-            width: 100vw;   
+            width: 100vw;
             justify-content: center;
             align-items: center;
-    
+
         }
-    
+
         @include from($desktop) {
             display: flex;
             justify-content: space-evenly;
@@ -72,7 +72,7 @@ $navbar-box-shadow-size: 0;
         margin: 0.5em;
         color: #657C7E;
         text-shadow: shadow(#91C4CA, 2px);
-        &.router-link-exact-active, 
+        &.router-link-exact-active,
         &.router-link-exact-active:hover, {
         color: #657C7E;
         text-shadow: shadow(#91C4CA, 1px);

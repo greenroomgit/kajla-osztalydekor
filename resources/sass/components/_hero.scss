@@ -74,7 +74,7 @@
 
 
         h1 {
-            color: #97BFC1;
+            color: #187A7D;
             text-shadow: shadow(#C8EAEE, 0.1em);
             margin-top: 5vw;
             display: block;
@@ -87,7 +87,7 @@
 
             b {
                 color: $red;
-                text-shadow: shadow(rgba($red, 0.3), 0.1em);
+                text-shadow: shadow(rgba(#C8EAEE, 0.9), 0.1em);
                 font-size: 1.5em;
                 display: block;
                 margin-bottom: 0.1em;
@@ -116,19 +116,19 @@
             text-align: center;
             font-size: 3.6vw;
             margin-top: 0.3em;
-            color: #97BFC1;
+            color: #187A7D;
             text-shadow: shadow(#C8EAEE, 0.12em);
             line-height: 1.1;
             span {
                 display: block;
                 color: $red;
                 text-shadow: shadow(rgba($red, 0.3), 0.1em);
-    
+
             }
 
             @include from($tablet) {
                 font-size: 2vw;
-                
+
             }
 
             @include from($widescreen) {
@@ -174,11 +174,11 @@
 
             &--left {
                 left: 4%;
-                background-image: image("anya-fia-kutya.png");
+                //background-image: image("anya-fia-kutya.png");
             }
 
             &--right {
-                background-image: image("apa-lánya.png");
+                //background-image: image("apa-lánya.png");
                 right: 4%;
             }
 

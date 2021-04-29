@@ -34,6 +34,10 @@ $container-width: 1200px;
     }
 }
 
+.mt-top {
+  margin-top: -220px;
+}
+
 //SECTION
 .section {
     padding-top: 0;
@@ -44,8 +48,10 @@ $container-width: 1200px;
 }
 
 .kajla-wrapper {
-    background: rgb(27,210,201);
-    background: linear-gradient(112.01deg, $bg-gradient-first 6.38%, $bg-gradient-second 85.43%);
+  background: rgb(34,194,133);
+  background: -webkit-linear-gradient(bottom, rgba(34,194,133,1) 0%, rgba(36,199,123,1) 100%);
+  background: -o-linear-gradient(bottom, rgba(34,194,133,1) 0%, rgba(36,199,123,1) 100%);
+  background: linear-gradient(to top, rgba(34,194,133,1) 0%, rgba(36,199,123,1) 100%);
 }
 
 .guide-steps {
@@ -175,7 +181,7 @@ $container-width: 1200px;
         .ps__rail-y,
         .ps__rail-y:hover
             {
-            background: #41A3AB;
+            background: $box-bg;
             border-radius: 10px;
             width: 10px;
             opacity: 0.6;
@@ -283,7 +289,7 @@ $container-width: 1200px;
         border-image-repeat:stretch;
     padding: 3rem;
     &__inner {
-        background-color:#7BCBD4;
+        background-color:#53E28C;
         padding: 10px 20px;
     }
 
