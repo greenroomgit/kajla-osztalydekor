@@ -45,7 +45,7 @@
 
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
-                            <input v-model="formData.class" id="modalImageClassInput" type="text" class="form__input form__input--full-width form__input--long-bg" name="caption" required autocomplete autofocus>
+                            <input v-model="formData.class" id="modalImageClassInput" type="text" class="form__input form__input--full-width form__input--long-bg" name="class" required autocomplete autofocus>
                             <div class="form__input-error" v-if="errors.class">{{errors.class}}</div>
                         </div>
                     </div>
@@ -111,13 +111,9 @@ export default {
             formData: {
                 name: null,
                 email: null,
-                terms: false,
-                caption: null,
-                postal: null,
-                city: null,
                 school: null,
                 class: null,
-                address: null,
+                terms: false
             },
             picture: null,
             pictureUrl: null,
@@ -191,20 +187,6 @@ export default {
             if (!this.formData.class) {
                 this.errors.class = 'Kötelezően kitöltendő';
             }
-/*
-            if (!this.formData.postal) {
-                this.errors.postal = 'Kötelezően kitöltendő';
-            }
-            if (this.formData.postal && !this.postcodeIsValid(this.formData.postal)) {
-                this.errors.postal = 'Nem megfelelő irányítószám';
-            }
-            if (!this.formData.city) {
-                this.errors.city = 'Kötelezően kitöltendő';
-            }
-            if (!this.formData.address) {
-                this.errors.address = 'Kötelezően kitöltendő';
-            }
-*/
 
             if (Object.keys(this.errors).length === 0) {
                 return true;
@@ -217,11 +199,9 @@ export default {
             this.formData = {
                 name: null,
                 email: null,
-                postal: null,
-                city: null,
-                terms: null,
-                address: null,
-                caption: null,
+                school: null,
+                class: null,
+                terms: null
             }
             this.picture = null,
                 this.pictureUrl = null,
