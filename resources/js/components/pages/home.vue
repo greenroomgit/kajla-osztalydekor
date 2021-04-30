@@ -1,7 +1,6 @@
 <template>
     <div>
-<!--        <GuideSteps />-->
-<!--
+<GuideSteps />
         <div class="separator">
             <div class="columns">
                 <div class="column">
@@ -14,7 +13,6 @@
             </div>
         </div>
         <Jackpot />
--->
         <div class="yellow-box separator">
             <div class="yellow-box__inner">
                 <div class="columns is-vcentered ">

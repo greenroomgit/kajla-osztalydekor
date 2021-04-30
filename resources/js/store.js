@@ -4,5 +4,5 @@ export default Vue.observable({
   photoUploadModalIsVisible: false,
   kitRequestModalIsVisible: false,
     CookieModalIsVisible: false,
-    EndingModalIsVisible: true,
+    EndingModalIsVisible: false,
 });
