@@ -89,6 +89,39 @@
       outline: none;
     }
   }
+
+  &__textarea {
+    width: 90%;
+    padding: 0 ;
+    background: none !important;
+    padding: 0.75em 1em;
+    font-family: "apokabold", sans-serif;
+    color: #fff;
+    font-size: $font-size;
+    border: none;
+    background: transparent;
+    height: 4.2em;
+    border-image-source: url('/assets/images/input-bg.png');
+    border-image-slice: 48 fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+
+    &--full-width {
+      width: 100%;
+    }
+    &--hidden {
+      display: none;
+    }
+    &:focus {
+    border-image-source: url('/assets/images/input-focus-bg.png');
+    border-image-slice: 48 fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+
+      outline: none;
+    }
+  }
+
   &__label {
     font-family: "marujoregular", sans-serif;
     color: $brown;

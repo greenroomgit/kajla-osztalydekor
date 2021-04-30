@@ -7,7 +7,7 @@
                 <!-- FORM WITH v-if WILL BE SHOWN BUT THEN HIDDEN AFTER SUCCESS SUBMIT -->
                 <form v-if="showForm" class="form">
                     <div class="form__description">
-                        A kép feltöltéséhez kérjük  adjátok meg az alábbi adatokat:
+                        A kép feltöltéséhez kérjük adjátok meg az alábbi adatokat:
                     </div>
                     <div :class="errors.name ? 'form__input-container form__input-container--no-bottom-margin' : 'form__input-container'">
                         <label for="modalNameInput" class="form__label col-md-4 col-form-label text-md-right">Név</label>
@@ -29,44 +29,24 @@
                         </div>
                     </div>
 
-
-                    <div :class="errors.postal ? 'form__input-container form__input-container--no-bottom-margin' : 'form__input-container'">
-                        <label for="modalpostalInput" class="form__label col-md-4 col-form-label text-md-right">Irányítószám</label>
-
-                        <div class="col-md-6">
-                            <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
-                            <input v-model="formData.postal" id="modalpostalInput" type="text" class="form__input" name="postal" required autocomplete autofocus>
-                            <div class="form__input-error" v-if="errors.postal">{{errors.postal}}</div>
-                        </div>
-                    </div>
-
-                    <div :class="errors.city ? 'form__input-container form__input-container--no-bottom-margin' : 'form__input-container'">
-                        <label for="modalCityInput" class="form__label col-md-4 col-form-label text-md-right">Település</label>
+                    <div class="form__input-container form__input-container--full-width">
+                        <label for="modalImageTitleInput" class="form__label col-md-4 col-form-label text-md-right">Iskola neve</label>
 
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
-                            <input v-model="formData.city" id="modalCityInput" type="text" class="form__input" name="city" required autocomplete autofocus>
-                            <div class="form__input-error" v-if="errors.city">{{errors.city}}</div>
+                            <textarea v-model="formData.school" id="modalImageSchoolInput" maxlength="105" class="form__textarea form__textarea--full-width form__textarea--long-bg" name="school" rows="8" cols="80" required></textarea>
+                            <div class="form__input-error" v-if="errors.school">{{errors.school}}</div>
                         </div>
                     </div>
 
-                    <div class="form__input-container form__input-container--last-centered">
-                        <label for="modaladdressInput" class="form__label col-md-4 col-form-label text-md-right">Utca, házszám</label>
-
-                        <div class="col-md-6">
-                            <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
-                            <input v-model="formData.address" id="modaladdressInput" type="text" class="form__input" name="address" required autocomplete autofocus>
-                            <div class="form__input-error" v-if="errors.address">{{errors.address}}</div>
-                        </div>
-                    </div>
-                                                            <img :src="'/assets/svg/separator.svg'" class="form__separator">
 
                     <div class="form__input-container form__input-container--full-width">
-                        <label for="modalImageTitleInput" class="form__label col-md-4 col-form-label text-md-right">Kép címe</label>
+                        <label for="modalImageTitleInput" class="form__label col-md-4 col-form-label text-md-right">Osztály</label>
 
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
-                            <input v-model="formData.caption" id="modalImageTitleInput" type="text" class="form__input form__input--full-width form__input--long-bg" name="caption" required autocomplete autofocus>
+                            <input v-model="formData.class" id="modalImageClassInput" type="text" class="form__input form__input--full-width form__input--long-bg" name="caption" required autocomplete autofocus>
+                            <div class="form__input-error" v-if="errors.class">{{errors.class}}</div>
                         </div>
                     </div>
                     <div class="form__input-container form__input-container--full-width ">
@@ -135,6 +115,8 @@ export default {
                 caption: null,
                 postal: null,
                 city: null,
+                school: null,
+                class: null,
                 address: null,
             },
             picture: null,
@@ -203,7 +185,13 @@ export default {
             if (!this.formData.terms) {
                 this.errors.terms = 'Nem fogadtad el a feltételeket';
             }
-
+            if (!this.formData.school) {
+                this.errors.school = 'Kötelezően kitöltendő';
+            }
+            if (!this.formData.class) {
+                this.errors.class = 'Kötelezően kitöltendő';
+            }
+/*
             if (!this.formData.postal) {
                 this.errors.postal = 'Kötelezően kitöltendő';
             }
@@ -216,7 +204,7 @@ export default {
             if (!this.formData.address) {
                 this.errors.address = 'Kötelezően kitöltendő';
             }
-
+*/
 
             if (Object.keys(this.errors).length === 0) {
                 return true;
