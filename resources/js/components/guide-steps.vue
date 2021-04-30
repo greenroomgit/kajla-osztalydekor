@@ -11,13 +11,10 @@
                         </div>
                         <div class="media-content">
                             <div class="content">
-                                <h3 class="title is-3">Válaszd ki a kedvenc nevezetességedet!</h3>
-                                <p>
-Kérd az ingyenes makett csomagot, amit postán megküldünk neked. Vagy töltsd le te magad, és nyomtasd ki.                                </p>
+                                <h3 class="title is-3">Osztálydekorációs játék</h3>
+                                <p>Minden alsós osztály részére elküldtünk egy Kajla makett-szettet, és a hozzá kapcsolódó Magyarország térképet.</p>
                                 <div class="box-bottom">
-                                    <button class="button is-primary" @click.prevent="openKitRequestModal">Postán kérem</button>
-                                                <router-link class="button is-primary" to="/makettek-letoltese">Letöltöm</router-link>
-
+                                  
                                 </div>
                             </div>
                         </div>
@@ -34,9 +31,9 @@ Kérd az ingyenes makett csomagot, amit postán megküldünk neked. Vagy töltsd
                         </div>
                         <div class="media-content">
                             <div class="content">
-                                <h3 class="title is-3">Állítsd Össze</h3>
+                                <h3 class="title is-3">Állítsátok Össze</h3>
                                 <p>
-                                     Az útmutató segítségével állítsd össze a makettet, majd rajzolj egy hozzá illő hátteret, és tedd mögé.
+                                     Az útmutató segítségével állítsátok össze a maketteket, és ragasszátok fel őket a térképre.
                                 </p>
                             </div>
                         </div>
@@ -53,9 +50,8 @@ Kérd az ingyenes makett csomagot, amit postán megküldünk neked. Vagy töltsd
                         </div>
                         <div class="media-content">
                             <div class="content">
-                                <h3 class="title is-3">Fotózz és töltsd fel</h3>
-                                <p>
-Fényképezd le az így megalkotott nevezetességet. Adj a képnek címet. Majd töltsd fel az oldalon!                                </p>
+                                <h3 class="title is-3">FotózzÁTOK LE és töltsÉTEK fel</h3>
+                                <p>Fényképezzétek le az így kapott térképét, és töltésétek fel az oldalon.</p>
 
                                                                 <div class="box-bottom">
                                     <button class="button is-primary" @click.prevent="openPhotoUploadModal">Képet küldök be</button>

@@ -6,7 +6,7 @@
                 <div class="column">
                     <div class="info-horizontal has-text-centered">
                         <div class="info-horizontal__inner">
-                            <p>A feltöltött képeket egy gyors ellenőrzés után publikáljuk. Ha közzétettük a képedet, akkor újabb makett csomaggal lepünk meg. <br> A játék végén egy zsűri fogja kiválasztani a legszebb képeket. Az alkotók pedig különdíjat nyernek.</p>
+                            <p>A feltöltött képeket egy gyors ellenőrzés után publikáljuk.</p>
                         </div>
                     </div>
                 </div>
@@ -102,5 +102,3 @@ export default {
 
 }
 </script>
-
-

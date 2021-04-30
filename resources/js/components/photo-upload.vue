@@ -7,21 +7,21 @@
                 <!-- FORM WITH v-if WILL BE SHOWN BUT THEN HIDDEN AFTER SUCCESS SUBMIT -->
                 <form v-if="showForm" class="form">
                     <div class="form__description">
-                        Képfeltöltéshez add meg az alábbi adatokat
+                        A kép feltöltéséhez kérjük  adjátok meg az alábbi adatokat:
                     </div>
                     <div :class="errors.name ? 'form__input-container form__input-container--no-bottom-margin' : 'form__input-container'">
                         <label for="modalNameInput" class="form__label col-md-4 col-form-label text-md-right">Név</label>
-    
+
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
                             <input v-model="formData.name" id="modalNameInput" type="text" class="form__input" name="name" required autocomplete autofocus>
                             <div class="form__input-error" v-if="errors.name">{{errors.name}}</div>
                         </div>
                     </div>
-    
+
                     <div :class="errors.email ? 'form__input-container form__input-container--no-bottom-margin' : 'form__input-container'">
                         <label for="modalEmailInput" class="form__label col-md-4 col-form-label text-md-right">E-mail cím</label>
-    
+
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
                             <input v-model="formData.email" id="modalEmailInput" type="text" class="form__input" name="email" required autocomplete autofocus>
@@ -29,30 +29,30 @@
                         </div>
                     </div>
 
-    
+
                     <div :class="errors.postal ? 'form__input-container form__input-container--no-bottom-margin' : 'form__input-container'">
                         <label for="modalpostalInput" class="form__label col-md-4 col-form-label text-md-right">Irányítószám</label>
-    
+
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
                             <input v-model="formData.postal" id="modalpostalInput" type="text" class="form__input" name="postal" required autocomplete autofocus>
                             <div class="form__input-error" v-if="errors.postal">{{errors.postal}}</div>
                         </div>
                     </div>
-    
+
                     <div :class="errors.city ? 'form__input-container form__input-container--no-bottom-margin' : 'form__input-container'">
                         <label for="modalCityInput" class="form__label col-md-4 col-form-label text-md-right">Település</label>
-    
+
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
                             <input v-model="formData.city" id="modalCityInput" type="text" class="form__input" name="city" required autocomplete autofocus>
                             <div class="form__input-error" v-if="errors.city">{{errors.city}}</div>
                         </div>
                     </div>
-    
+
                     <div class="form__input-container form__input-container--last-centered">
                         <label for="modaladdressInput" class="form__label col-md-4 col-form-label text-md-right">Utca, házszám</label>
-    
+
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
                             <input v-model="formData.address" id="modaladdressInput" type="text" class="form__input" name="address" required autocomplete autofocus>
@@ -63,7 +63,7 @@
 
                     <div class="form__input-container form__input-container--full-width">
                         <label for="modalImageTitleInput" class="form__label col-md-4 col-form-label text-md-right">Kép címe</label>
-    
+
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
                             <input v-model="formData.caption" id="modalImageTitleInput" type="text" class="form__input form__input--full-width form__input--long-bg" name="caption" required autocomplete autofocus>
@@ -76,7 +76,7 @@
                   </label>
                         <div class="form__input-error" v-if="errors.terms">{{errors.terms}}</div>
                     </div>
-    
+
                     <div class="form__input-container form__input-container--full-width form__input-container--horizontal-centered form__input-container--last-centered">
                         <div class="col-md-6">
                             <div class="custom-file">
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="form__input-container form__input-container--full-width form__input-container--horizontal-centered form__input-container--bottom-offset">
                         <div class="col-md-6 offset-md-4 column">
                             <button @click.prevent="submit" type="submit" class="btn button is-secondary upload" :disabled="isLoading">
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </form>
-    
+
                 <div v-if="upload" class="modal-success yellow-box">
                     <div class="yellow-box__inner">
                         <img class="modal-success-icon" :src="'/assets/svg/success-icon.svg'" alt="">
@@ -264,8 +264,8 @@ export default {
             this.resetForm()
             this.$emit('onClose')
         },
-        download: function (url) {   
-          window.open(url, "_blank");    
+        download: function (url) {
+          window.open(url, "_blank");
         }
 
     },
