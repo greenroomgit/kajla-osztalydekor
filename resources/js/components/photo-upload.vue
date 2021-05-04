@@ -24,13 +24,13 @@
 
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
-                            <input v-model="formData.email" id="modalEmailInput" type="text" class="form__input" name="email" required autocomplete autofocus>
+                            <input v-model="formData.email" id="modalEmailInput" type="text" class="form__input" name="email" required autocomplete >
                             <div class="form__input-error" v-if="errors.email">{{errors.email}}</div>
                         </div>
                     </div>
 
                     <div class="form__input-container form__input-container--full-width">
-                        <label for="modalImageTitleInput" class="form__label col-md-4 col-form-label text-md-right">Iskola neve</label>
+                        <label for="modalImageSchoolInput" class="form__label col-md-4 col-form-label text-md-right">Iskola neve</label>
 
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
@@ -41,14 +41,40 @@
 
 
                     <div class="form__input-container form__input-container--full-width">
-                        <label for="modalImageTitleInput" class="form__label col-md-4 col-form-label text-md-right">Osztály</label>
+                        <label for="modalImageClassInput" class="form__label col-md-4 col-form-label text-md-right">Osztály</label>
 
                         <div class="col-md-6">
                             <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
-                            <input v-model="formData.class" id="modalImageClassInput" type="text" class="form__input form__input--full-width form__input--long-bg" name="class" required autocomplete autofocus>
+                            <input v-model="formData.class" id="modalImageClassInput" type="text" class="form__input form__input--full-width form__input--long-bg" name="class" required autocomplete >
                             <div class="form__input-error" v-if="errors.class">{{errors.class}}</div>
                         </div>
                     </div>
+
+                    <div class="form__input-container form__input-container--full-width form__input-container--horizontal-centered">
+                        <div class="col-md-6">
+                            <div class="custom-file">
+                                <!-- MOST IMPORTANT - SEE "ref" AND "@change" PROPERTIES -->
+                                <input type="file" class="custom-file-input form__input--hidden" id="customFile" ref="file" @change="handleFileObject()">
+                                <label class="form__input-button-container custom-file-label text-left" for="customFile">
+                                    <span class="button is-primary form__input-button">Kép kiválasztása</span>
+
+                                    <div class="form__image-preview-container" v-if="picture">
+                                        <img :src="pictureUrl" class="form__image-preview">
+                                    </div>
+                                    <div class="form__input-error" v-if="errors.picture">{{errors.picture}}</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__input-container form__input-container--full-width">
+                        <label for="modalImageTitleInput" class="form__label col-md-4 col-form-label text-md-right">Kép címe</label>
+
+                        <div class="col-md-6">
+                            <!-- NOTICE v-model="formData.name" - THAT'S HOW IT GETS ATTACHED TO THE FIELD -->
+                            <input v-model="formData.caption" id="modalImageTitleInput" type="text" class="form__input form__input--full-width form__input--long-bg" name="caption" required autocomplete >
+                        </div>
+                    </div>
+
                     <div class="form__input-container form__input-container--full-width ">
                         <label class="form__label form__label--checkbox">Megismertem, és elfogadom a <a @click.self.prevent="download(`docs/kajla-makett-mese-jatekszabalyzat.pdf`)">jatékszabályzatot és az adatkezelési tájékoztatót</a>
                     <input v-model="formData.terms" type="checkbox" class="form__checkbox" name="terms" value="1">
@@ -57,22 +83,7 @@
                         <div class="form__input-error" v-if="errors.terms">{{errors.terms}}</div>
                     </div>
 
-                    <div class="form__input-container form__input-container--full-width form__input-container--horizontal-centered form__input-container--last-centered">
-                        <div class="col-md-6">
-                            <div class="custom-file">
-                                <!-- MOST IMPORTANT - SEE "ref" AND "@change" PROPERTIES -->
-                                <input type="file" class="custom-file-input form__input--hidden" id="customFile" ref="file" @change="handleFileObject()">
-                                <label class="form__input-button-container custom-file-label text-left" for="customFile">
-                                                <span class="button is-primary form__input-button">Kép kiválasztása</span>
 
-                        <div class="form__image-preview-container" v-if="picture">
-                          <img :src="pictureUrl" class="form__image-preview">
-                        </div>
-                        <div class="form__input-error" v-if="errors.picture">{{errors.picture}}</div>
-                        </label>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="form__input-container form__input-container--full-width form__input-container--horizontal-centered form__input-container--bottom-offset">
                         <div class="col-md-6 offset-md-4 column">
@@ -112,6 +123,7 @@ export default {
                 name: null,
                 email: null,
                 school: null,
+                caption: null,
                 class: null,
                 terms: false
             },
@@ -188,6 +200,10 @@ export default {
                 this.errors.class = 'Kötelezően kitöltendő';
             }
 
+            if (!this.formData.caption) {
+                this.errors.caption = 'Kötelezően kitöltendő';
+            }
+
             if (Object.keys(this.errors).length === 0) {
                 return true;
             } else {
@@ -201,6 +217,7 @@ export default {
                 email: null,
                 school: null,
                 class: null,
+                caption: null,
                 terms: null
             }
             this.picture = null,

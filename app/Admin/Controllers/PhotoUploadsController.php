@@ -37,6 +37,8 @@ class PhotoUploadsController extends AdminController
         $grid->column('name', __('Name'));
         $grid->column('caption', __('Caption'));
         $grid->column('email', __('Email'));
+        $grid->column('school', __('School'));
+        $grid->column('class', __('Class'));
         $grid->column('is_winner', __('Winner'));
         $grid->column('published', __('Published'));
         $grid->column('created_at', __('Created at'));
@@ -64,6 +66,8 @@ class PhotoUploadsController extends AdminController
         $show->field('name', __('Name'));
         $show->field('email', __('Email'));
         $show->field('caption', __('Caption'));
+        $show->field('school', __('School'));
+        $show->field('class', __('Class'));
         $show->field('published', __('Published'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
@@ -82,10 +86,11 @@ class PhotoUploadsController extends AdminController
 
         $form->text('name', __('Name'));
         $form->text('email', __('Email'));
-        $form->text('city', __('City'));
-        $form->text('address', __('Address'));
-        $form->number('postal', __('Postal'));
+        $form->textarea('school', __('School'));
+        $form->text('class', __('Class'));
         $form->text('caption', __('Caption'));
+        $form->image('picture')->uniqueName();
+        $form->image('thumb')->uniqueName();
         $form->switch('is_winner', __('Winner'));
         $form->switch('published', __('Published'));
 

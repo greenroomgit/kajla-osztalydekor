@@ -19,12 +19,8 @@ class PhotoUploadsController extends Controller
             'caption'     => ['required', 'string'],
             'email'    => ['required', 'email'],
             'terms'    => ['required'],
-            'city'    => ['required', 'string'],
-            'address'    => ['required', 'string'],
-            'postal'    => [
-              'required',
-              'postal_code:HU',
-            ],
+            'class'    => ['required', 'string'],
+            'school'    => ['required', 'string'],
         ];
 
         $customMessages = [
