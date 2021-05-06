@@ -14,7 +14,7 @@
                                 <h3 class="title is-3">Osztálydekorációs játék</h3>
                                 <p>Minden alsós osztály részére elküldtünk egy Kajla makett-szettet, és a hozzá kapcsolódó Magyarország térképet.</p>
                                 <div class="box-bottom">
-                                  
+
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         </div>
                         <div class="media-content">
                             <div class="content">
-                                <h3 class="title is-3">FotózzÁTOK LE és töltsÉTEK fel</h3>
+                                <h3 class="title is-3">Fotózzátok le és töltsétek fel</h3>
                                 <p>Fényképezzétek le az így kapott térképét, és töltésétek fel az oldalon.</p>
 
                                                                 <div class="box-bottom">

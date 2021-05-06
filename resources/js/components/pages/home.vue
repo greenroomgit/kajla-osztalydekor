@@ -12,7 +12,6 @@
                 </div>
             </div>
         </div>
-        <Jackpot />
         <div class="yellow-box separator">
             <div class="yellow-box__inner">
                 <div class="columns is-vcentered ">
@@ -25,7 +24,6 @@
                 </div>
             </div>
         </div>
-        <Videos />
         <Pictures />
         <KitRequest :is-open="isKitRequestModalOpen" v-on:onClose="openKitRequestModal" />
         <PhotoUpload :is-open="isPhotoUploadModalOpen" v-on:onClose="openPhotoUploadModal" />
