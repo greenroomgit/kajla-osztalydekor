@@ -7,7 +7,7 @@
             <div class="hero-body">
                 <h1 class="">
                     <b>Alkossatok csodát!</b>
-                    Építsétek meg magyarország<br> 3D-s térképét, és diszítsétek<br> vele osztálytermeteket!
+                    Építsétek meg magyarország 3D-s térképét, és diszítsétek vele osztálytermeteket!
                 </h1>
             </div>
 

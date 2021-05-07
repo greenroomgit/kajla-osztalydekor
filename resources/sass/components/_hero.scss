@@ -73,17 +73,22 @@
         }
 
 
+        .hero-body {
+            display: flex;
+            justify-content: center;
+        }
         h1 {
             color: #187A7D;
             text-shadow: shadow(#C8EAEE, 0.1em);
             margin-top: 5vw;
             display: block;
             text-align: center;
-            line-height: 60px;
             line-height: 1;
             position: relative;
             z-index: 2;
             font-size: 5vw;
+            max-width: 300px;
+
 
             b {
                 color: $red;
