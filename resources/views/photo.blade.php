@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kajla Makett</title>
+    <title>Kajla Kajla Osztálydekor</title>
             <meta property="og:type" content= "website" />
-        <meta property="og:site_name" content="Kajla Makett" />
+        <meta property="og:site_name" content="Kajla Kajla Osztálydekor" />
         <meta property="og:image" itemprop="image primaryImageOfPage" content="{{ URL::asset('storage'.$image['picture']) }}" />
 
 

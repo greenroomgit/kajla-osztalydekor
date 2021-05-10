@@ -3,7 +3,7 @@
 @section('content')
 
 	@include('emails.kajla.contentStart')
-<p><b>Kedves Játékosunk!</b></p>
+<p><b>Kedves Regisztráló!</b></p>
 
 <br>
 

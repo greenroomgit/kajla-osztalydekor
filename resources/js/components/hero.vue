@@ -1,10 +1,10 @@
 <template>
     <section :class="[
                 'section section-hero separator ',
-                isHomepage ? 'hero--home' : ''
+                'hero--home',
                 ]">
         <div class="container">
-            <div class="hero-body">
+            <div class="hero-body" v-if="isHomepage">
                 <h1 class="">
                     <b>Alkossatok csodát!</b>
                     Építsétek meg magyarország 3D-s térképét, és diszítsétek vele osztálytermeteket!
