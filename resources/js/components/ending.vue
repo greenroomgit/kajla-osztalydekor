@@ -10,7 +10,7 @@
                   <div class="yellow-box__inner">
                         <div class="rich-text">
                             <p>
-                                Elérkezett a várva várt pillanat. A Kajla Makett pályázat zsűrije kiválasztotta a nyertes képeket.
+                                Elérkezett a várva várt pillanat. A Kajla Osztálydekor pályázat zsűrije kiválasztotta a nyertes képeket.
                             </p>
                             <p>
                                 <b>                                    Szeretettel gratulálunk az alkotóknak!

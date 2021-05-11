@@ -69,7 +69,7 @@ export default {
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
       // all titles will be injected into this template
-      titleTemplate: '%s | Kajla Makett'
+      titleTemplate: '%s | Kajla Osztálydekor'
     }
 
 }
