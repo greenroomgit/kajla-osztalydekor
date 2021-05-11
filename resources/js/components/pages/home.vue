@@ -16,7 +16,7 @@
             <div class="yellow-box__inner">
                 <div class="columns is-vcentered ">
                     <div class="column is-half has-text-centered has-text-left-tablet">
-                        <h3 class="title is-4 is-size-3-tablet">Töltsd le bármikor a Kajla maketteket, és építsd fel a kedvenc nevezetességedet!</h3>
+                        <h3 class="title is-4 is-size-3-tablet">Töltsd le bármikor a Kajla maketteket, és építsd fel a kedvenc nevezetességeidet!</h3>
                     </div>
                     <div class="column is-half has-text-centered">
                         <router-link class="button is-primary" to="/makettek-letoltese">Kajla makett letöltés</router-link>
