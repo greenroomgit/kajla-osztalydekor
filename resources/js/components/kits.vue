@@ -47,10 +47,10 @@
             <div class="yellow-box kit-guide">
                 <div class="yellow-box__inner">
                     <h3 class="title is-size-4 is-size-1-tablet">
-                        Így tudod összeállítani a maketteket
+                        Így tudjátok összeállítani a maketteket
                     </h3>
 
-                    <p>Miután kinyomtattad a makettet, a fekete folytonos vonal mentén vágd ki, majd a szaggatott vonal mentén hajtogasd össze őket.</p>
+                    <p>Miután kinyomtattátok a makettet, a fekete folytonos vonal mentén vágjátok ki, majd a szaggatott vonal mentén hajtogasátok össze őket.</p>
                     <img src="/assets/images/makett-plain.png" alt="">
 
                 </div>
