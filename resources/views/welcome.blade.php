@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Kajla Makett</title>
-<meta property="og:title" content="Kajla Makett">
+        <title>Kajla Osztálydekor</title>
+<meta property="og:title" content="Kajla Osztálydekor">
 <meta property="og:url" content="">
 <meta property="og:description" content="">
 <meta property="og:type" content="website">

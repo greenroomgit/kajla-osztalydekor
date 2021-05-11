@@ -7,7 +7,7 @@
 
     <title>Kajla Kajla Osztálydekor</title>
             <meta property="og:type" content= "website" />
-        <meta property="og:site_name" content="Kajla Kajla Osztálydekor" />
+        <meta property="og:site_name" content="Kajla  Osztálydekor" />
         <meta property="og:image" itemprop="image primaryImageOfPage" content="{{ URL::asset('storage'.$image['picture']) }}" />
 
 
