@@ -28,7 +28,7 @@
                                     <a v-if="a5" @click="download(`storage/${a5}`)">A5 méretben</a>
                                     <a v-if="a4" @click="download(`storage/${a4}`)">A4 méretben</a>
                                     <a v-if="a2" @click="download(`storage/${a2}`)">A2 méretben</a>
-                                    <a v-if="a1" @click="download(`storage/${a1}`)">A1 méretben</a>
+                                    <a v-if="a1" @click="download(`storage/${a1}`)">A0 méretben</a>
                                 </p>
                             </div>
                         </div>

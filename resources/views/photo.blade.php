@@ -45,7 +45,7 @@
                 <div class="container">
                     <div class="hero-body">
                         <h1>
-                            Építsétek meg magyarország 3D-s térképét,<br> és diszítsétek vele osztálytermeteket!
+                            Építsétek meg magyarország 3D-s térképét,<br>és díszítsétek vele osztálytermeteket!
                         </h1>
                     </div>
                     <div class="hero__family hero__family--left"></div>

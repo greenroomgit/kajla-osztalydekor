@@ -14,7 +14,7 @@
 
 
 <p>Üdvözlettel: <br>
-A Szervezők
+    Kajla csapat
 </p>
 
 

@@ -9,7 +9,7 @@
 <meta property="og:url" content="">
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://makett.kajla.hu/assets/images/mtu_kajla-3d_kihivas_kv_v5.jpg">
+<meta property="og:image" content="https://osztalydekor.grtest.hu/assets/images/mtu_kajla-3d_kihivas_kv_v5.jpg">
         <!-- Styles -->
         <link rel="stylesheet" href="{{mix('/css/app.css')}}"></link>
 

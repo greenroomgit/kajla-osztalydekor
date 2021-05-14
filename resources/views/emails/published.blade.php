@@ -16,7 +16,7 @@
 
 
 <p>Üdvözlettel: <br>
-A Szervezők
+ Kajla csapat
 </p>
 	@include('emails.kajla.contentEnd')
 
