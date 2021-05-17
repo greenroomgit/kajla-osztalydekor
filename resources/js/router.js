@@ -32,7 +32,7 @@ const routes = [
         name: 'makettek-letoltese',
         component: MakettekLetoltese
     },
-    {   
+    {
         path: '/felhasznalasi-feltetelek',
         name: 'felhasznalasi-feltetelek',
         component: FelhasznalasiFeltetelek
@@ -47,12 +47,12 @@ const routes = [
         name: 'suti-kezeles',
         component: SutiKezeles
     },
-    {   
+    {
         path: '/impresszum',
         name: 'impresszum',
         component: Impressum
     },
-    {   
+    {
         path: '/verify-request',
         name: 'verify-request',
         component: VerifyRequest
@@ -82,11 +82,11 @@ Vue.use(VueAnalytics, {
         { field: 'anonymizeIp', value: true }
     ],
     router: router,
-    // debug: {
-    //     enabled: true, // default value
-    //     trace: true, // default value
-    //     sendHitTask: true // default value
-    // }
+    debug: {
+        enabled: true, // default value
+        trace: true, // default value
+        sendHitTask: true // default value
+    }
 
 });
 
