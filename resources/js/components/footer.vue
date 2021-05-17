@@ -2,7 +2,7 @@
     <footer class="footer has-text-centered-mobile">
         <div class="container">
             <p>Hol vagy Kajla © {{ new Date().getFullYear() }} Minden jog fenntartva</p>
-            <a @click="download(`https://kajla.hu/doc/reszveteli_kajla_hu_210517.pdf`)">Részvételi szabályzat </a>
+            <a @click="download(`https://kajla.hu/doc/reszveteli_kajla_hu_210517.pdf`)">Általános részvételi szabályzat </a>
             <span></span>
             <a @click="download(`https://kajla.hu/doc/adatkezelesi_kajla_hu_210517.pdf`)">Adatkezelési nyilatkozat </a>
             <span></span>
